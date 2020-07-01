@@ -11,6 +11,14 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('normal-table');
+})->name('normal-table');
+
+Route::get('/data-tables', function () {
+    return view('datatables');
+})->name('datatables');
